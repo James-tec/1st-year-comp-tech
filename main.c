@@ -3,15 +3,23 @@
 
 int main()
 {
-    float d = 100;
+    float a, b, c;
 
-    printf("KILOMETRES  MILES\n");
-    printf("__________  ______\n");
+    printf("Enter the starting value\n");
+    scanf("%f", &a);
+    printf("Enter the increament value\n");
+    scanf("%f", &b);
+    printf("Enter the end value\n", c);
+    scanf("%f", &c);
 
-    while (d<=1000)
+    printf("fahrenheit         celcius\n");
+    printf("__________         _______\n");
+
+    while (a <= c)
     {
-        printf("%6.2f =   %6.2f\n", d, d/1.609);
-        d = d + 50;
+        printf("%6.2f degrees F = %6.2f degrees C\n", a, (a-32.0)*5.0/9.0);
+        a = a + b;
+
     }
     return 0;
 }
